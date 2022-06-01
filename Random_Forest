@@ -205,6 +205,7 @@ if __name__ == "__main__":
     print("finally_result is:", list(finally_result))
     print("y_test is:", [int(i) for i in list(y_test)])
 
+    # 算出均方误差
     var_rate = 0.0
     for i in range(len(y_test)):
         var_rate += (finally_result[i] - y_test[i]) ** 2
